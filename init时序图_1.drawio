@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-19T07:12:34.942Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="1DBV4BjnDwSj5n_Q7U92" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-19T12:19:45.303Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="8iw5IZoh2Mf4GBdmoTPX" version="20.2.3" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="1874" dy="1292" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2034" dy="1383" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -242,7 +242,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DfM5zsoMmQUeujYZHkAH-7" value="zygote启动&#xa;1.framework/base/cmds/app_process&#xa;2.framework/base/core/jni&#xa;3.framework/base/core/java/com/android/internal/os/&#xa;4.libnativehelper/JniInvocation.cpp" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-7" value="zygote启动&#xa;1.framework/base/cmds/app_process&#xa;2.framework/base/core/jni&#xa;3.framework/base/core/java/com/android/internal/os/&#xa;4.libnativehelper/JniInvocation.cpp&#xa;5.libnativehelper/Threads.cpp&#xa;6.libnativehelper/include/nativehelper/jni.cpp-&gt;JNIENV" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="810" y="30" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-9" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontSize=18;" edge="1" parent="1">
@@ -265,7 +265,7 @@
           <mxGeometry x="600" y="190" width="180" height="630" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=18;" vertex="1" parent="DfM5zsoMmQUeujYZHkAH-11">
-          <mxGeometry x="85" y="75" width="10" height="215" as="geometry" />
+          <mxGeometry x="85" y="75" width="10" height="295" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-16" value="SkGraphics::Init()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=18;" edge="1" parent="DfM5zsoMmQUeujYZHkAH-11">
           <mxGeometry relative="1" as="geometry">
@@ -278,7 +278,7 @@
             <mxPoint x="95" y="120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DfM5zsoMmQUeujYZHkAH-22" value="startVm" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=18;" edge="1" parent="DfM5zsoMmQUeujYZHkAH-11">
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-22" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;startVm&lt;br&gt;1.addOption添加虚拟机项&lt;br&gt;2.创建JNIEnv*&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=18;" edge="1" parent="DfM5zsoMmQUeujYZHkAH-11">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="95" y="240" as="sourcePoint" />
             <Array as="points">
@@ -288,8 +288,24 @@
             <mxPoint x="95" y="275" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-37" value="startReg&lt;br&gt;1.native接口注册到虚拟机" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=12;exitX=1.019;exitY=0.727;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.046;entryY=0.795;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" target="DfM5zsoMmQUeujYZHkAH-14" parent="DfM5zsoMmQUeujYZHkAH-11" source="DfM5zsoMmQUeujYZHkAH-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="290" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="120" y="289" />
+              <mxPoint x="120" y="309" />
+            </Array>
+            <mxPoint x="100" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-40" value="androidSetCreateThreadFunc" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;entryX=0.1;entryY=0.52;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="DfM5zsoMmQUeujYZHkAH-11" target="DfM5zsoMmQUeujYZHkAH-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="120" y="300" as="sourcePoint" />
+            <mxPoint x="280" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-13" value="ZygoteInit.java" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="190" width="140" height="630" as="geometry" />
+          <mxGeometry x="1420" y="190" width="140" height="630" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-19" value="JniInvocation.cpp" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="900" y="190" width="150" height="630" as="geometry" />
@@ -313,7 +329,7 @@
             <mxPoint x="650" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DfM5zsoMmQUeujYZHkAH-30" value="init" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;exitX=1.011;exitY=0.674;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="DfM5zsoMmQUeujYZHkAH-14">
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-30" value="init" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;" edge="1" parent="1" source="DfM5zsoMmQUeujYZHkAH-14">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="700" y="410" as="sourcePoint" />
             <mxPoint x="970" y="410" as="targetPoint" />
@@ -321,6 +337,12 @@
               <mxPoint x="870" y="410" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-38" value="Threads.cpp" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="190" width="100" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-39" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=12;" vertex="1" parent="DfM5zsoMmQUeujYZHkAH-38">
+          <mxGeometry x="45" y="280" width="10" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
