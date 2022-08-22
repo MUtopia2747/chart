@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-21T02:33:14.717Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="-z2up_DQDS-t5W8a79rA" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-22T06:59:51.995Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="Pup-c6oNprX5u9kwydsg" version="20.2.5" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="2211" dy="1326" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3185" dy="2039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -218,31 +218,36 @@
           <mxGeometry x="-480" y="120" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-6" value="app_main.cpp" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="420" y="190" width="230" height="630" as="geometry" />
+          <mxGeometry x="360" y="190" width="230" height="630" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=18;" parent="DfM5zsoMmQUeujYZHkAH-6" vertex="1">
-          <mxGeometry x="60" y="60" width="10" height="560" as="geometry" />
+          <mxGeometry x="110" y="60" width="10" height="560" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-17" value="AppRuntime" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=18;" parent="DfM5zsoMmQUeujYZHkAH-6" target="DfM5zsoMmQUeujYZHkAH-14" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="70" y="100" as="sourcePoint" />
+            <mxPoint x="120" y="100" as="sourcePoint" />
             <mxPoint x="230" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DfM5zsoMmQUeujYZHkAH-24" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;maybeCreateDalvikCache&lt;br&gt;创建&lt;i&gt;&lt;b&gt;data目录&lt;/b&gt;&lt;/i&gt;并修改文件夹&lt;br&gt;权限&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=18;" parent="DfM5zsoMmQUeujYZHkAH-6" edge="1">
-          <mxGeometry x="0.1429" relative="1" as="geometry">
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-24" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;maybeCreateDalvikCache&lt;br&gt;创建&lt;i&gt;&lt;b&gt;data目录&lt;/b&gt;&lt;/i&gt;并修改文件夹&lt;br&gt;权限&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=18;exitX=1.143;exitY=0.13;exitDx=0;exitDy=0;exitPerimeter=0;" parent="DfM5zsoMmQUeujYZHkAH-6" edge="1" source="DfM5zsoMmQUeujYZHkAH-8">
+          <mxGeometry x="0.0113" relative="1" as="geometry">
             <mxPoint x="70" y="150" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="70" y="130" />
-              <mxPoint x="100" y="130" />
-              <mxPoint x="100" y="190" />
-              <mxPoint x="70" y="190" />
+              <mxPoint x="121" y="130" />
+              <mxPoint x="150" y="130" />
+              <mxPoint x="150" y="190" />
             </Array>
-            <mxPoint x="70" y="190" as="targetPoint" />
+            <mxPoint x="120" y="190" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DfM5zsoMmQUeujYZHkAH-7" value="zygote启动&#xa;1.framework/base/cmds/app_process&#xa;2.framework/base/core/jni&#xa;3.framework/base/core/java/com/android/internal/os/&#xa;4.libnativehelper/JniInvocation.cpp&#xa;5.libnativehelper/Threads.cpp&#xa;6.libnativehelper/include/nativehelper/jni.cpp-&gt;JNIENV&#xa;6.libnativehelper/JNIHelp.cpp" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" parent="1" vertex="1">
+        <mxCell id="gkzFKs4SRI5wnjid1r51-5" value="CallStaticVoidMethod-com.android.internal.os.ZygoteInit-main" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="DfM5zsoMmQUeujYZHkAH-6" target="gkzFKs4SRI5wnjid1r51-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="120" y="390" as="sourcePoint" />
+            <mxPoint x="1270" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-7" value="zygote启动&#xa;1.framework/base/cmds/app_process&#xa;2.framework/base/core/jni&#xa;3.framework/base/core/java/com/android/internal/os/&#xa;4.libnativehelper/JniInvocation.cpp&#xa;5.libnativehelper/Threads.cpp&#xa;6.libnativehelper/include/nativehelper/jni.cpp-&gt;JNIENV&#xa;7.libnativehelper/JNIHelp.cpp&#xa;8.art/runtime/java_vm_ext.cc" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="810" y="30" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-9" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontSize=18;" parent="1" edge="1">
@@ -254,7 +259,7 @@
         <mxCell id="DfM5zsoMmQUeujYZHkAH-10" value="执行on nonencrypted时" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontSize=18;" parent="1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="-950" y="790" as="sourcePoint" />
-            <mxPoint x="480" y="310" as="targetPoint" />
+            <mxPoint x="470" y="310" as="targetPoint" />
             <Array as="points">
               <mxPoint x="300" y="800" />
               <mxPoint x="300" y="310" />
@@ -265,7 +270,7 @@
           <mxGeometry x="600" y="190" width="180" height="630" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=18;" parent="DfM5zsoMmQUeujYZHkAH-11" vertex="1">
-          <mxGeometry x="85" y="75" width="10" height="295" as="geometry" />
+          <mxGeometry x="85" y="75" width="10" height="515" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-16" value="SkGraphics::Init()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=18;" parent="DfM5zsoMmQUeujYZHkAH-11" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -288,40 +293,38 @@
             <mxPoint x="95" y="275" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nUyMibiSjW3psWNG235X-2" value="startReg" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.033;entryY=0.809;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="DfM5zsoMmQUeujYZHkAH-11" target="DfM5zsoMmQUeujYZHkAH-14">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-110" y="314.23" as="sourcePoint" />
-            <mxPoint x="50" y="314.23" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nUyMibiSjW3psWNG235X-4" value="register_jni_procs" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1.006;entryY=0.863;exitX=1.006;exitY=0.76;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" target="DfM5zsoMmQUeujYZHkAH-14" parent="DfM5zsoMmQUeujYZHkAH-11" source="DfM5zsoMmQUeujYZHkAH-14">
-          <mxGeometry x="0.1239" relative="1" as="geometry">
+        <mxCell id="nUyMibiSjW3psWNG235X-4" value="startReg&lt;br&gt;register_jni_procs" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;exitX=1.006;exitY=0.76;exitDx=0;exitDy=0;exitPerimeter=0;" parent="DfM5zsoMmQUeujYZHkAH-11" source="DfM5zsoMmQUeujYZHkAH-14" edge="1">
+          <mxGeometry x="0.6129" relative="1" as="geometry">
             <mxPoint x="95" y="310" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="125" y="299" />
               <mxPoint x="125" y="330" />
             </Array>
-            <mxPoint x="100" y="330" as="targetPoint" />
+            <mxPoint x="95" y="330" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-13" value="ZygoteInit.java" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="1440" y="190" width="140" height="630" as="geometry" />
+          <mxGeometry x="1570" y="190" width="140" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="gkzFKs4SRI5wnjid1r51-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="DfM5zsoMmQUeujYZHkAH-13">
+          <mxGeometry x="65" y="350" width="10" height="80" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-19" value="JniInvocation.cpp" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="900" y="190" width="150" height="630" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-29" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=12;" parent="DfM5zsoMmQUeujYZHkAH-19" vertex="1">
-          <mxGeometry x="70" y="210" width="10" height="80" as="geometry" />
+          <mxGeometry x="70" y="210" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DfM5zsoMmQUeujYZHkAH-32" value="1.GetLibrary从属性中读取&lt;br&gt;libart.so；&lt;br&gt;2.dlopen打开libart.so，查&lt;br&gt;找JNI_GetDefaultJavaVMInitArgs&lt;br&gt;等方法。" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1.086;entryY=0.386;fontSize=12;entryDx=0;entryDy=0;entryPerimeter=0;" parent="DfM5zsoMmQUeujYZHkAH-19" target="DfM5zsoMmQUeujYZHkAH-29" edge="1">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-32" value="1.GetLibrary从属性中读取&lt;br&gt;libart.so；&lt;br&gt;2.dlopen打开libart.so，查&lt;br&gt;找JNI_GetDefaultJavaVMInitArgs&lt;br&gt;等方法。" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=12;exitX=1.105;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="DfM5zsoMmQUeujYZHkAH-19" edge="1" source="DfM5zsoMmQUeujYZHkAH-29">
+          <mxGeometry x="-0.3417" relative="1" as="geometry">
             <mxPoint x="80" y="220" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="110" y="220" />
-              <mxPoint x="110" y="241" />
+              <mxPoint x="110" y="210" />
+              <mxPoint x="110" y="240" />
             </Array>
-            <mxPoint x="85" y="240" as="targetPoint" />
+            <mxPoint x="81" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-18" value="start启动虚拟机" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=18;exitX=0.9;exitY=0.288;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="DfM5zsoMmQUeujYZHkAH-8" target="DfM5zsoMmQUeujYZHkAH-14" edge="1">
@@ -339,29 +342,44 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="DfM5zsoMmQUeujYZHkAH-38" value="Threads.cpp" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="190" width="100" height="630" as="geometry" />
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-38" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Threads.cpp&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="190" width="100" height="630" as="geometry" />
         </mxCell>
         <mxCell id="DfM5zsoMmQUeujYZHkAH-39" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=12;" parent="DfM5zsoMmQUeujYZHkAH-38" vertex="1">
           <mxGeometry x="45" y="280" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="nUyMibiSjW3psWNG235X-1" value="JNIHelp.cpp" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="1320" y="190" width="100" height="630" as="geometry" />
+        <mxCell id="nUyMibiSjW3psWNG235X-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;JNIHelp.cpp&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="1450" y="190" width="100" height="630" as="geometry" />
         </mxCell>
-        <mxCell id="nUyMibiSjW3psWNG235X-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="nUyMibiSjW3psWNG235X-1">
+        <mxCell id="nUyMibiSjW3psWNG235X-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="nUyMibiSjW3psWNG235X-1" vertex="1">
           <mxGeometry x="45" y="305" width="10" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="DfM5zsoMmQUeujYZHkAH-40" value="androidSetCreateThreadFunc" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;entryX=-0.145;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.962;exitY=0.764;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="DfM5zsoMmQUeujYZHkAH-39" edge="1" source="DfM5zsoMmQUeujYZHkAH-14">
+        <mxCell id="DfM5zsoMmQUeujYZHkAH-40" value="androidSetCreateThreadFunc" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;entryX=-0.145;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="DfM5zsoMmQUeujYZHkAH-39" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="730" y="490" as="sourcePoint" />
+            <mxPoint x="700" y="490" as="sourcePoint" />
             <mxPoint x="880" y="490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nUyMibiSjW3psWNG235X-6" value="jniRegisterNativeMethods" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.104;entryY=0.453;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="nUyMibiSjW3psWNG235X-5">
+        <mxCell id="nUyMibiSjW3psWNG235X-6" value="jniRegisterNativeMethods" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.104;entryY=0.453;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="nUyMibiSjW3psWNG235X-5" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="830" y="510" as="sourcePoint" />
+            <mxPoint x="730" y="511" as="sourcePoint" />
             <mxPoint x="1360" y="510" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="gkzFKs4SRI5wnjid1r51-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;java_vm_ext.cc&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="190" width="140" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="gkzFKs4SRI5wnjid1r51-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="gkzFKs4SRI5wnjid1r51-1">
+          <mxGeometry x="65" y="250" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gkzFKs4SRI5wnjid1r51-3" value="JNI_CreateJavaVM" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=-0.035;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="gkzFKs4SRI5wnjid1r51-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="810" y="470" as="sourcePoint" />
+            <mxPoint x="1260" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gkzFKs4SRI5wnjid1r51-6" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;RuntimeInit.java&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="190" width="160" height="630" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
