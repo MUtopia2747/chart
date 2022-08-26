@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T03:22:31.955Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="4gbYdwYmUy6hOKgUO1Q7" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-26T05:50:20.004Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="Cu1ZscB-1xnMX-9XGa-E" version="20.2.7" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="2455" dy="1623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -429,22 +429,23 @@
           <mxGeometry x="2220" y="190" width="200" height="640" as="geometry" />
         </mxCell>
         <mxCell id="gkzFKs4SRI5wnjid1r51-20" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=14;" parent="gkzFKs4SRI5wnjid1r51-19" vertex="1">
-          <mxGeometry x="95" y="300" width="10" height="290" as="geometry" />
+          <mxGeometry x="95" y="460" width="10" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="gkzFKs4SRI5wnjid1r51-27" value="1.创建Instrumentation实例&lt;br&gt;2.创建ContextImpl实例&lt;br&gt;3.创建Application实例，oncreate生命周期开始&lt;br&gt;4.ViewRootImpl.addConfigCallback" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;fontSize=14;" parent="gkzFKs4SRI5wnjid1r51-19" edge="1">
-          <mxGeometry x="-0.6154" relative="1" as="geometry">
-            <mxPoint x="105" y="300" as="sourcePoint" />
+        <mxCell id="gkzFKs4SRI5wnjid1r51-27" value="1.创建Instrumentation实例&lt;br&gt;2.创建ContextImpl实例&lt;br&gt;3.创建Application实例，oncreate生命周期开始&lt;br&gt;4.ViewRootImpl.addConfigCallback" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=14;exitX=1.02;exitY=-0.002;exitDx=0;exitDy=0;exitPerimeter=0;" parent="gkzFKs4SRI5wnjid1r51-19" edge="1" source="gkzFKs4SRI5wnjid1r51-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="460" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="135" y="300" />
-              <mxPoint x="135" y="500" />
+              <mxPoint x="135" y="460" />
+              <mxPoint x="135" y="550" />
+              <mxPoint x="105" y="550" />
             </Array>
-            <mxPoint x="105" y="500.0000000000002" as="targetPoint" />
+            <mxPoint x="105" y="550" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gkzFKs4SRI5wnjid1r51-22" value="systemMain" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=14;entryX=-0.083;entryY=0.732;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="gkzFKs4SRI5wnjid1r51-20" edge="1">
+        <mxCell id="gkzFKs4SRI5wnjid1r51-22" value="systemMain-attach" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=14;entryX=0.035;entryY=0.565;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="gkzFKs4SRI5wnjid1r51-20" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="2160" y="700" as="sourcePoint" />
+            <mxPoint x="2180" y="700" as="sourcePoint" />
             <mxPoint x="2310" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
