@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-08T07:38:41.812Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36" etag="83LuYGor1Ue9fguXQus2" version="20.3.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-08T08:34:41.920Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36" etag="2go-AcVzdQv2vmd6fS7j" version="20.3.3" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
     <mxGraphModel dx="3200" dy="1978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -357,7 +357,7 @@
         <mxCell id="4kRK0BYigSoJ91SEgmZK-1823" value="状态模式" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="1130" y="1740" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kRK0BYigSoJ91SEgmZK-1824" value="迭代子模式" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="4kRK0BYigSoJ91SEgmZK-1824" value="迭代器模式" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="1130" y="1540" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4kRK0BYigSoJ91SEgmZK-1825" value="访问者模式" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
@@ -389,6 +389,9 @@
         </mxCell>
         <mxCell id="4kRK0BYigSoJ91SEgmZK-1847" value="迪米特法则" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-440" y="1760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4kRK0BYigSoJ91SEgmZK-1849" value="&lt;a href=&quot;https://cloud.tencent.com/developer/article/1602270&quot;&gt;https://cloud.tencent.com/developer/article/1602270&lt;/a&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="1325" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
