@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T02:42:35.798Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36" etag="FNR039jrfZP51r8vAFuq" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-19T02:47:29.460Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36" etag="n2h8X70_sQHWfJ2RDVys" version="20.4.0" type="github">
   <diagram id="0tg5IIPubemhuqr9GwKv" name="第 1 页">
     <mxGraphModel dx="1422" dy="1975" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -19,11 +19,14 @@
         <mxCell id="0ek_3PKIBDXSsCbuwrNs-5" value="ART(Android Runtime)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="270" y="80" width="150" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="0ek_3PKIBDXSsCbuwrNs-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0ek_3PKIBDXSsCbuwrNs-7" target="0ek_3PKIBDXSsCbuwrNs-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0ek_3PKIBDXSsCbuwrNs-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0ek_3PKIBDXSsCbuwrNs-7" target="0ek_3PKIBDXSsCbuwrNs-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="0ek_3PKIBDXSsCbuwrNs-7" value="提供了AOT(Ahead Of Time)&lt;br&gt;运行应用程序机制" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="520" y="-110" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="0ek_3PKIBDXSsCbuwrNs-10" value="AOT：在运行前将中间静态代码编译成本地代码，以便节省jit的时间&lt;br&gt;JIT：即时编译(运行时编译)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="500" y="-170" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="0ek_3PKIBDXSsCbuwrNs-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0ek_3PKIBDXSsCbuwrNs-12" target="0ek_3PKIBDXSsCbuwrNs-14">
           <mxGeometry relative="1" as="geometry" />
@@ -72,6 +75,12 @@
         </mxCell>
         <mxCell id="0ek_3PKIBDXSsCbuwrNs-28" value="提供虚拟机需要的本地库" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="480" y="450" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0ek_3PKIBDXSsCbuwrNs-30" value="&lt;span style=&quot;text-align: left;&quot;&gt;AOT：在运行前将中间静态代码编译成本地代码，以便节省jit的时间&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="-170" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0ek_3PKIBDXSsCbuwrNs-33" value="&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;JIT:Just-In-Time Complilation&lt;br&gt;1.在运行时将字节码翻译成机器码；&lt;br&gt;2.会将翻译好的机器码缓存起来，节约时间；&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="-60" width="210" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
